@@ -51,7 +51,7 @@ h1 {
     font-size: 19px;
     line-height: 27px;
     color: #FFFFFF;
-    background-image: url(../resourses/Rectangle_1.jpg);
+    background-image: url("../resourses/Rectangle_1.jpg");
     background-repeat: no-repeat;
     padding: 379px 680px 40px 40px;
     
@@ -175,7 +175,7 @@ h1 {
 }
 
 .project_of_flat {
-    background: url(../resourses/project_of_flat.jpg);
+    background: url("../resourses/project_of_flat.jpg");
     background-position: initial;
     background-repeat: no-repeat;
     height: 717px;
