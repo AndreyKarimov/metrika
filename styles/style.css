@@ -1,0 +1,280 @@
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    padding-top: 32px;
+    min-width: 1150px;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background: #121212;
+}
+
+/* ->> Меню */
+.menu {
+    margin: auto;
+    width: 1150.35px;
+}
+
+.menu table {
+    float: right;
+    font-size: 18px;
+    line-height: 24.59px;
+
+}
+
+.menu table td {
+    padding: 0px 30px 0px 30px;
+}
+/* <<- Меню */
+
+/* ->> Главная картинка */
+.main {
+    height: 650px;
+    margin: auto;
+    width: 1150.35px;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 60px;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 68px;
+}
+
+.main p {
+    font-size: 19px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background-image: url(/resourses/Rectangle_1.jpg);
+    background-repeat: no-repeat;
+    padding: 379px 680px 40px 40px;
+    
+}
+/* <<- Главная картинка */
+
+
+/* ->> О нас */
+.about {
+    margin: 150px auto;
+    width: 1150.35px;
+}
+
+.about p {
+    font-size: 45px;
+    line-height: 61px;
+    margin-bottom: 30px;
+}
+
+.about h2 {
+    font-size: 18px;
+    line-height: 24.59px;
+    color: #121212;
+}
+
+.about a {
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    letter-spacing: -0.03em;
+    background: #AD1818;
+    border-radius: 5px; 
+    width: 255px;
+    height: 67px;
+    text-decoration: none;
+    
+}
+/* <<- О нас */
+
+/* >>> Projects */
+.projects {
+    margin: auto;
+    width: 1150.35px;
+}
+
+.projects h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 24.59px;
+    color: #121212;
+}
+
+.projects p {
+    margin: 15px auto;
+    font-size: 30px;
+    line-height: 40.98px;
+    color: #121212;
+}
+
+.projects .detail {
+    font-size: 20px;
+    line-height: 27.32px;
+    color: #AD1818;
+    text-decoration: none;
+}
+
+.projects div {
+    margin-bottom: 90px;
+}
+
+.projects .view_all {
+    border: 1px groove #AD1818;
+    border-radius: 5px;
+    height: 41px;
+    width: 1150px;
+    text-align: center;
+    padding: 56px 0;
+    margin-bottom: 150px;
+}
+
+.view_all a {
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 41px;
+    color: #AD1818;
+}
+
+/* <<< Projects */
+
+
+/* >>> Services */
+.services {
+    margin: auto;
+    width: 1150.35px;
+    padding: 151px 0px;
+}
+
+.services h2 {
+    font-size: 18px;
+    line-height: 24.59px;
+    color: #FFFFFF;
+    margin-bottom: 34px;
+}
+
+.services img {
+    height: 270px;
+    width: auto;
+}
+
+.services p {
+    font-size: 30px;
+    line-height: 40.98px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.services div {
+    margin-bottom: 60px;
+}
+
+.project_of_flat {
+    background: url(/resourses/project_of_flat.jpg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    height: 717px;
+    margin: auto;
+    width: 1150.35px;
+}
+
+.project_of_flat p {
+    color: #FFFFFF;
+    padding-left: 125px;
+    padding-top: 575px;
+    font-size: 30px;
+    line-height: 40.98px;
+    letter-spacing: -0.03em;
+    width: 443px;
+}
+/* <<< Services */
+
+/* >>> contacts */
+.contacts {
+    margin: auto;
+    width: 1150.35px;
+}
+
+.contacts img {
+    margin-top: 150px;
+}
+
+.contacts .text {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: #121212;
+    margin-top: 12px;
+}
+
+.contacts .number {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    color: #121212;
+    margin-top: 32px;
+}
+
+.contacts .e-mail {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    opacity: 0.5;
+    margin-top: 30px;
+}
+
+.contacts .e-mail a {
+    text-decoration: none;
+    color: #121212;
+}
+/* <<< contacts */
+
+/* >>> footer */
+.footer {
+    margin: auto;
+    width: 1150.35px;
+    
+}
+
+.footer table {
+    margin: auto;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.footer td {
+    padding-left: 53px;
+    padding-top: 60px;
+}
+
+.footer p {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    opacity: 0.5;
+    text-align: center;
+    padding-top: 87px;
+    padding-bottom: 30px;
+
+}
+
+/* <<<footer */
+
+
+
+
+
+
+
+
+
