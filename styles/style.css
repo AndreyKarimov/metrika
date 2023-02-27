@@ -50,14 +50,26 @@ h1 {
     margin-top: 68px;
 }
 
-.main p {
+.main-background {
+    background-image: url("../resourses/Rectangle_1.jpg");
+    background-repeat: no-repeat;
+    width: inherit;
+    height: 500px;
+    position: relative;
+
+}
+
+.main-background p {
     font-size: 19px;
     line-height: 27px;
     color: #FFFFFF;
-    background-image: url("../resourses/Rectangle_1.jpg");
-    background-repeat: no-repeat;
-    padding: 379px 680px 40px 40px;
-    
+    padding-left: 40px;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 430px;
+    height: 81px;
+    position: absolute;
+    bottom: 40px;
 }
 /* <<- Главная картинка */
 
@@ -93,6 +105,12 @@ h1 {
     text-decoration: none;
     
 }
+.about a:hover {
+    background: #FFFFFF;
+    color: #AD1818;
+    border: 1px solid #AD1818;
+}
+
 /* <<- О нас */
 
 /* >>> Projects */
@@ -127,21 +145,27 @@ h1 {
 }
 
 .projects .view_all {
+    display: block;
     border: 1px groove #AD1818;
     border-radius: 5px;
     height: 41px;
     width: 1150px;
     text-align: center;
+    line-height: 41px;
     padding: 56px 0;
     margin-bottom: 150px;
-}
-
-.view_all a {
     text-decoration: none;
     font-size: 30px;
     line-height: 41px;
     color: #AD1818;
 }
+
+.projects .view_all:hover {
+    color: #FFFFFF;
+    border: none;
+    background-color: #AD1818;
+}
+
 
 /* <<< Projects */
 
@@ -278,8 +302,6 @@ h1 {
 }
 
 /* <<<footer */
-
-
 
 
 
