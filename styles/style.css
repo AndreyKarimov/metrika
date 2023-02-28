@@ -149,7 +149,7 @@ h1 {
     border: 1px groove #AD1818;
     border-radius: 5px;
     height: 41px;
-    width: 1150px;
+    width: 100%;
     text-align: center;
     line-height: 41px;
     padding: 56px 0;
