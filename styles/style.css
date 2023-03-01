@@ -220,14 +220,21 @@ body {
 .two-rooms-flat {
     width: 100%;
     height: 717px;
-    padding: 575px 832px 60px 125px;
-
+    position: relative;
     background-image: url(../resourses/project_of_flat.jpg);
+}
+
+.two-rooms-flat p {
+    position: absolute;
+    bottom: 60px;
+    left: 125px;
+    width: 443px;
     font-size: 30px;
     line-height: 41px;
     letter-spacing: -0.03em;
-    color: #FFFFFF;    
+    color: #FFFFFF;   
 }
+
 /* <<< Двухкомнатная картина */
 
 /* >>> Контакты */
