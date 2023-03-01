@@ -15,6 +15,10 @@ body {
 
 /* Кнопки меню*/
 
+.header a {
+    float: left;
+}
+
 .menu li {
     float: right;
     margin-right: 60px;
