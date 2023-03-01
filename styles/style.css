@@ -1,311 +1,288 @@
-
 body {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    padding-top: 32px;
-    min-width: 1150px;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.white {
     background: #F5F5F5;
+    font-family: 'Manrope';
+    padding-top: 15px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.black {
-    background: #121212;
+/* Выравнивание всех секций */
+.header, .main-section, .about, .project-list, .services, .contact { 
+    width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-/* ->> Меню */
-.menu {
-    margin: auto;
-    width: 1150.35px;
-}
+/* Кнопки меню*/
 
-.menu table {
+.menu li {
     float: right;
-    font-size: 18px;
-    line-height: 24.59px;
-
+    margin-right: 60px;
 }
 
-.menu table td {
-    padding: 0px 30px 0px 30px;
-}
-/* <<- Меню */
-
-/* ->> Главная картинка */
-.main {
-    height: 650px;
-    margin: auto;
-    width: 1150.35px;
+.menu li:first-child {
+    margin-right: 0;
 }
 
-h1 {
-    font-size: 60px;
-    line-height: 60px;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-top: 68px;
-}
-
-.main-background {
-    background-image: url("../resourses/Rectangle_1.jpg");
-    background-repeat: no-repeat;
-    width: inherit;
-    height: 500px;
-    position: relative;
-
-}
-
-.main-background p {
-    font-size: 19px;
-    line-height: 27px;
-    color: #FFFFFF;
-    padding-left: 40px;
-    display: inline-block;
-    vertical-align: bottom;
-    width: 430px;
-    height: 81px;
-    position: absolute;
-    bottom: 40px;
-}
-/* <<- Главная картинка */
-
-
-/* ->> О нас */
-.about {
-    margin: 150px auto;
-    width: 1150.35px;
-}
-
-.about p {
-    font-size: 45px;
-    line-height: 61px;
-    margin-bottom: 30px;
-}
-
-.about h2 {
-    font-size: 18px;
-    line-height: 24.59px;
-    color: #121212;
-}
-
-.about a {
-    font-size: 20px;
-    line-height: 27px;
-    color: #FFFFFF;
-    padding: 20px 40px;
-    letter-spacing: -0.03em;
-    background: #AD1818;
-    border-radius: 5px; 
-    width: 255px;
-    height: 67px;
+.menu-btn { 
     text-decoration: none;
-    
-}
-.about a:hover {
-    background: #FFFFFF;
-    color: #AD1818;
-    border: 1px solid #AD1818;
-}
-
-/* <<- О нас */
-
-/* >>> Projects */
-.projects {
-    margin: auto;
-    width: 1150.35px;
-}
-
-.projects h2 {
-    margin-bottom: 30px;
-    font-size: 18px;
-    line-height: 24.59px;
-    color: #121212;
-}
-
-.projects p {
-    margin: 15px auto;
-    font-size: 30px;
-    line-height: 40.98px;
-    color: #121212;
-}
-
-.projects .detail {
-    font-size: 20px;
-    line-height: 27.32px;
-    color: #AD1818;
-    text-decoration: none;
-}
-
-.projects div {
-    margin-bottom: 90px;
-}
-
-.projects .view_all {
-    display: block;
-    border: 1px groove #AD1818;
-    border-radius: 5px;
-    height: 41px;
-    width: 100%;
-    text-align: center;
-    line-height: 41px;
-    padding: 56px 0;
-    margin-bottom: 150px;
-    text-decoration: none;
-    font-size: 30px;
-    line-height: 41px;
-    color: #AD1818;
-}
-
-.projects .view_all:hover {
-    color: #FFFFFF;
-    border: none;
-    background-color: #AD1818;
-}
-
-
-/* <<< Projects */
-
-
-/* >>> Services */
-.services {
-    margin: auto;
-    width: 1150.35px;
-    padding: 151px 0px;
-}
-
-.services h2 {
-    font-size: 18px;
-    line-height: 24.59px;
-    color: #FFFFFF;
-    margin-bottom: 34px;
-}
-
-.services img {
-    height: 270px;
-    width: auto;
-}
-
-.services p {
-    font-size: 30px;
-    line-height: 40.98px;
-    letter-spacing: -0.03em;
-    color: #FFFFFF;
-    margin-top: 15px;
-}
-
-.services div {
-    margin-bottom: 60px;
-}
-/* <<< Services */
-
-/* >>> project_of_flat */
-
-.project_of_flat {
-    background: url("../resourses/project_of_flat.jpg");
-    background-position: initial;
-    background-repeat: no-repeat;
-    margin: auto;
-    width: inherit;
-    min-height: 717px;
-    align-content: ;
-}
-
-.project_of_flat p {
-    color: #FFFFFF;
-    position: relative;
-    left: 125px; top: 575px;
-    font-size: 30px;
-    line-height: 40.98px;
-    letter-spacing: -0.03em;
-    width: 443px;
-
-}
-
-/* <<< project_of_flat */
-
-/* >>> contacts */
-.contacts {
-    margin: auto auto 150px;
-    width: 1150.35px;
-}
-
-.contacts img {
-    margin-top: 150px;
-}
-
-.contacts .text {
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
-    color: #121212;
-    margin-top: 12px;
-}
-
-.contacts .number {
-    font-size: 60px;
-    line-height: 60px;
-    letter-spacing: -0.03em;
-    color: #121212;
-    margin-top: 32px;
-}
-
-.contacts .e-mail {
-    font-size: 60px;
-    line-height: 60px;
-    letter-spacing: -0.03em;
-    opacity: 0.5;
-    margin-top: 30px;
-}
-
-.contacts .e-mail a {
-    text-decoration: none;
-    color: #121212;
-}
-/* <<< contacts */
-
-/* >>> footer */
-.footer {
-    margin: auto;
-    width: 1150.35px;
-    
-}
-
-.footer table {
-    margin: auto;
+    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
-
+    color: #121212;
 }
 
-.footer td {
-    padding-left: 53px;
-    padding-top: 60px;
+
+.menu-btn:hover {
+    opacity: 0.5;
+    text-decoration: underline;
 }
 
-.footer p {
+/* >>> Главная секция */
+.main-section {
+    margin-top: 70px;
+}
+
+.main-section h1 {
+    padding-right: 194px;
+
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    color: #121212;
+}
+
+.main-section p {
+    margin-top: 30px;
+    padding: 379px 680px 0 40px;
+    height: 500px;
+
+    background-image: url(../resourses/main-pic.jpg);
+
+    font-weight: 400;
     font-size: 20px;
     line-height: 27px;
     letter-spacing: -0.03em;
     color: #FFFFFF;
-    opacity: 0.5;
+}
+/* <<< Главная секция */
+
+/* >>> Секция О НАС */
+.about {
+    margin-top: 151px;
+    }
+
+.about h2, .project-list h2 {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #121212;
+}
+
+.about p {
+    margin-top: 30px;
+
+    font-size: 45px;
+    line-height: 61px;
+    letter-spacing: -0.03em;
+    color: #121212;
+}
+
+.servises_view {
+    margin-top: 30px;
+    display: block;
+    padding: 20px 40px;
+    width: 255px;
+    height: 67px;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
     text-align: center;
-    padding-top: 87px;
-    padding-bottom: 30px;
+    text-decoration: none;
+
+
+    background: #AD1818;
+    border-radius: 5px;
+}
+/* <<< Секция О НАС */
+
+
+/* >>> Секция Список проектов */
+.project-list {
+    margin-top: 150px;
+}
+
+.project-list h2 {
+    margin-bottom: 30px;
+}
+
+.project-card-wrapper {
+    margin-bottom: 90px;
+}
+
+.project-card-wrapper h3 {
+    margin-top: 15px;
+
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+    color: #121212;    
+}
+
+.project-card-detail {
+    margin-top: 15px;
+
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    color: #AD1818;    
+}
+
+.view_all_projects {
+    display: block;
+
+    font-size: 30px;
+    line-height: 153px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #AD1818;    
+    text-decoration: none;
+    border: 1px solid #AD1818;
+    border-radius: 7px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.view_all_projects:hover {
+    color: #FFFFFF; 
+    background-color: #AD1818;
+}
+/* <<< Секция Список проектов */
+
+/* >>> Секция УСЛУГИ */
+.services-wrapper {
+    background: #121212;
+    padding: 150px 0;
+    margin-top: 150px;
+}
+
+.services {
+    color: #FFFFFF; 
+}
+
+.services h2 {
+    margin-bottom: 34px;
+
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;    
+}
+
+.service-card {
+    margin-bottom: 60px;
+}
+
+.service-card:last-child {
+    margin-bottom: 0;
+}
+
+.service-card h3 {
+    margin-top: 15px;
+
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+}
+
+/* <<< Секция УСЛУГИ */
+
+/* >>> Двухкомнатная картина */
+.two-rooms-flat {
+    width: 100%;
+    height: 717px;
+    padding: 575px 832px 60px 125px;
+
+    background-image: url(../resourses/project_of_flat.jpg);
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;    
+}
+/* <<< Двухкомнатная картина */
+
+/* >>> Контакты */
+.contact {
+    color: #121212;
+    padding-top: 150px;
+}
+
+.contact__contact {
+    margin-top: 15px;
+
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;    
+}
+
+.contact__number {
+    margin-top: 32px;
+
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+}
+
+.contact__email {
+    margin-top: 30px;
+    display: inline-block;
+
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    opacity: 0.5;  
+    border-bottom: 1px solid #121212;
+}
+/* <<< Контакты */
+
+/* >>> Footer */
+.footer {
+    margin-top: 150px;
+    padding: 60px 0 30px;
+    background: #121212;
+    color: white;
+    text-align: center;
 
 }
 
-/* <<<footer */
+.footer__menu li {
+    display: inline-block;
+    margin-right: 55px;
+}
 
+.footer__menu a {
 
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+.footer__menu a:hover {
+    opacity: 0.5;
+}
 
+.design-studio {
+    margin-top: 87px;
 
+    opacity: 0.5;
+}
 
-
-
+list-style-type
+/* <<< Footer */
