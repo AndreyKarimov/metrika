@@ -16,19 +16,26 @@ body {
 /* Кнопки меню*/
 
 .header a {
-    float: left;
+    display: inline-block;
+    
+}
+
+.menu {
+    float: right;
 }
 
 .menu li {
-    float: right;
+    display: inline-block;
     margin-right: 60px;
+
 }
 
-.menu li:first-child {
+.menu li:last-child {
     margin-right: 0;
 }
 
 .menu-btn { 
+    height: 25px;
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
