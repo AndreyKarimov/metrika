@@ -9,6 +9,13 @@ body {
     margin: 0 auto;
 }
 
+.menu-btn, .main-section h1, .p-wrapper p, .about h2, .project-list h2,
+.about p, .servises_view, .project-card-wrapper h3, .project-card-detail,
+ .view_all_projects, .services h2, .service-card h3,.two-rooms-flat p,
+ .contact__contact, .contact__email, .footer__menu a,.design-studio {
+    letter-spacing: -0.03em;
+}
+
 /* Выравнивание всех секций */
 .header, .main-section, .about, .project-list, .services, .contact { 
     width: 1180px;
@@ -43,7 +50,6 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #121212;
 }
@@ -65,7 +71,6 @@ body {
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
-    letter-spacing: -0.03em;
     color: #121212;
 }
 
@@ -86,7 +91,6 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: -0.03em;
     color: #FFFFFF;
 }
 
@@ -103,7 +107,6 @@ body {
 .about h2, .project-list h2 {
     font-size: 18px;
     line-height: 25px;
-    letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #121212;
 }
@@ -115,7 +118,6 @@ body {
 
     font-size: 45px;
     line-height: 61px;
-    letter-spacing: -0.03em;
     color: #121212;
 }
 
@@ -127,7 +129,6 @@ body {
     height: 67px;
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: -0.03em;
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
@@ -157,7 +158,6 @@ body {
 
     font-size: 30px;
     line-height: 41px;
-    letter-spacing: -0.03em;
     color: #121212;    
 }
 
@@ -169,7 +169,6 @@ body {
     text-decoration: none;
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: -0.03em;
     color: #AD1818;    
 }
 
@@ -179,7 +178,6 @@ body {
     font-size: 30px;
     line-height: 150px;
     text-align: center;
-    letter-spacing: -0.03em;
     color: #AD1818;    
     text-decoration: none;
     border: 1px solid #AD1818;
@@ -211,7 +209,6 @@ body {
 
     font-size: 18px;
     line-height: 25px;
-    letter-spacing: -0.03em;
     text-transform: uppercase;    
 }
 
@@ -233,7 +230,6 @@ body {
 
     font-size: 30px;
     line-height: 39px;
-    letter-spacing: -0.03em;
 }
 
 /* <<< Секция УСЛУГИ */
@@ -264,7 +260,6 @@ body {
     width: 443px;
     font-size: 30px;
     line-height: 41px;
-    letter-spacing: -0.03em;
     color: #FFFFFF;   
 }
 
@@ -297,7 +292,6 @@ body {
 
     font-size: 18px;
     line-height: 25px;
-    letter-spacing: -0.03em;
     text-transform: uppercase;    
 }
 
@@ -314,16 +308,10 @@ body {
 }
 
 .contact__email {
-
-
     font-size: 60px;
     line-height: 60px;
-    letter-spacing: -0.03em;
     text-decoration: none;
     color: #121212;
-
-    
-
 }
 .contact__email-wrapper {
     margin-top: 30px;
@@ -380,7 +368,6 @@ body {
 
     font-size: 18px;
     line-height: 25px;
-    letter-spacing: -0.03em;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
@@ -398,6 +385,5 @@ body {
 
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: -0.03em;
 }
 /* <<< Footer */
