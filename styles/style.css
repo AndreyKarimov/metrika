@@ -3,11 +3,10 @@ html {
 }
 
 body {
-    margin: 0 auto;
-
     font-family: 'Manrope';
     padding-top: 15px;
-    letter-spacing: -0.03em;
+
+    margin: 0 auto;
 }
 
 /* Выравнивание всех секций */
@@ -21,6 +20,7 @@ body {
 
 .header a {
     display: inline-block;
+    
 }
 
 .menu {
@@ -30,6 +30,7 @@ body {
 .menu li {
     display: inline-block;
     margin-right: 57px;
+
 }
 
 .menu li:last-child {
@@ -42,6 +43,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #121212;
 }
@@ -49,7 +51,7 @@ body {
 
 .menu-btn:hover {
     opacity: 0.5;
-    text-decoration: underline;
+    border-bottom: 1px solid #000000;;
 }
 
 /* >>> Главная секция */
@@ -63,6 +65,7 @@ body {
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
+    letter-spacing: -0.03em;
     color: #121212;
 }
 
@@ -83,8 +86,13 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
+    letter-spacing: -0.03em;
     color: #FFFFFF;
 }
+
+
+
+
 /* <<< Главная секция */
 
 /* >>> Секция О НАС */
@@ -95,7 +103,7 @@ body {
 .about h2, .project-list h2 {
     font-size: 18px;
     line-height: 25px;
-    
+    letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #121212;
 }
@@ -106,7 +114,8 @@ body {
     width: 1051px;
 
     font-size: 45px;
-    line-height: 61px;   
+    line-height: 61px;
+    letter-spacing: -0.03em;
     color: #121212;
 }
 
@@ -116,12 +125,14 @@ body {
     padding: 20px 40px;
     width: 255px;
     height: 67px;
-
     font-size: 20px;
     line-height: 27px;
+    letter-spacing: -0.03em;
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
+
+
     background: #AD1818;
     border-radius: 5px;
 }
@@ -146,6 +157,7 @@ body {
 
     font-size: 30px;
     line-height: 41px;
+    letter-spacing: -0.03em;
     color: #121212;    
 }
 
@@ -157,6 +169,7 @@ body {
     text-decoration: none;
     font-size: 20px;
     line-height: 27px;
+    letter-spacing: -0.03em;
     color: #AD1818;    
 }
 
@@ -166,10 +179,12 @@ body {
     font-size: 30px;
     line-height: 150px;
     text-align: center;
+    letter-spacing: -0.03em;
     color: #AD1818;    
     text-decoration: none;
     border: 1px solid #AD1818;
     border-radius: 7px;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 .view_all_projects:hover {
     color: #FFFFFF; 
@@ -179,7 +194,6 @@ body {
 
 /* >>> Секция УСЛУГИ */
 .services-wrapper {
-    min-width: 1180px;
     background: #121212;
     padding: 150px 0;
     margin-top: 150px;
@@ -188,6 +202,7 @@ body {
 
 .services {
     color: #FFFFFF; 
+
 }
 
 .services h2 {
@@ -196,13 +211,12 @@ body {
 
     font-size: 18px;
     line-height: 25px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;    
 }
 
 .service-card img {
-    display: block;
     width: 100%;
-    max-width: 1150px;
 }
 
 .service-card {
@@ -219,6 +233,7 @@ body {
 
     font-size: 30px;
     line-height: 39px;
+    letter-spacing: -0.03em;
 }
 
 /* <<< Секция УСЛУГИ */
@@ -232,6 +247,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+
 }
 
 .two-rooms-flat .container {
@@ -246,11 +262,12 @@ body {
     bottom: 60px;
     left: 3px;
     width: 443px;
-
     font-size: 30px;
     line-height: 41px;
+    letter-spacing: -0.03em;
     color: #FFFFFF;   
 }
+
 /* <<< Двухкомнатная картина */
 
 /* >>> Контакты */
@@ -268,6 +285,7 @@ body {
     width: 24px; height: 24px;
     top: 151px; left: 11px;
 
+
     background-image: url(../resourses/Vector.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -278,7 +296,8 @@ body {
     margin-top: 15px;
 
     font-size: 18px;
-    line-height: 25px;    
+    line-height: 25px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;    
 }
 
@@ -291,20 +310,31 @@ body {
     letter-spacing: -0.01em;
     text-decoration: none;
     color: #121212;
+
 }
 
 .contact__email {
-    margin-top: 30px;
-    display: inline-block;
+
 
     font-size: 60px;
     line-height: 60px;
+    letter-spacing: -0.03em;
     text-decoration: none;
     color: #121212;
+
+    
+
+}
+.contact__email-wrapper {
+    margin-top: 30px;
+    display: inline-block;
+    height: 70px;
+    padding-bottom: 10px;
     opacity: 0.5;  
+    border-bottom: 2px solid #121212;
 }
 
-.contact__email:after {
+/* .contact__email:after {
     margin-top: 10px;
     display: block;
     content: '';
@@ -312,7 +342,7 @@ body {
     height: 2px;
     background-color: #121212;
     opacity: 0.5;
-}
+} */
 /* <<< Контакты */
 
 /* >>> Footer */
@@ -331,6 +361,12 @@ body {
     text-align: center;
 }
 
+/* .footer ul {
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+} */
+
 .footer__menu li {
     display: inline-block;
     margin-right: 52px;
@@ -341,8 +377,10 @@ body {
 }
 
 .footer__menu a {
+
     font-size: 18px;
-    line-height: 25px;    
+    line-height: 25px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
@@ -357,7 +395,9 @@ body {
 
     text-align: center;
     opacity: 0.5;
+
     font-size: 20px;
     line-height: 27px;
+    letter-spacing: -0.03em;
 }
 /* <<< Footer */
