@@ -9,10 +9,23 @@ body {
     margin: 0 auto;
 }
 
-.menu-btn, .main-section h1, .p-wrapper p, .about h2, .project-list h2,
-.about p, .servises_view, .project-card-wrapper h3, .project-card-detail,
- .view_all_projects, .services h2, .service-card h3,.two-rooms-flat p,
- .contact__contact, .contact__email, .footer__menu a,.design-studio {
+.menu-btn, 
+.main-section h1, 
+.p-wrapper p, 
+.about h2, 
+.project-list h2,
+.about p, 
+.servises_view, 
+.project-card-wrapper h3, 
+.project-card-detail,
+ .view_all_projects, 
+ .services h2, 
+ .service-card h3,
+ .two-rooms-flat p,
+ .contact__contact, 
+ .contact__email, 
+ .footer__menu a,
+ .design-studio {
     letter-spacing: -0.03em;
 }
 
