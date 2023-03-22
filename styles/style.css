@@ -9,38 +9,49 @@ body {
     margin: 0 auto;
 }
 
-.menu-btn, 
-.main-section h1, 
-.p-wrapper p, 
-.about h2, 
+.menu-btn,
+.main-section h1,
+.p-wrapper p,
+.about h2,
 .project-list h2,
-.about p, 
-.servises_view, 
-.project-card-wrapper h3, 
+.about p,
+.servises_view,
+.project-card-wrapper h3,
 .project-card-detail,
- .view_all_projects, 
- .services h2, 
- .service-card h3,
- .two-rooms-flat p,
- .contact__contact, 
- .contact__email, 
- .footer__menu a,
- .design-studio {
+.view_all_projects,
+.services h2,
+.service-card h3,
+.two-rooms-flat p,
+.contact__contact,
+.contact__email,
+.footer__menu a,
+.design-studio {
     letter-spacing: -0.03em;
 }
 
-/* Выравнивание всех секций */
-.header, .main-section, .about, .project-list, .services, .contact { 
+.container {
     width: 1180px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
+@media (max-width: 1399px) {
+    .container {
+        width: 100%;
+        padding: 0 50px;
+    }
+}
+
+section {
+    width: 100%;
+}
+
+
 /* Кнопки меню*/
 
 .header a {
     display: inline-block;
-    
+
 }
 
 .menu {
@@ -57,7 +68,7 @@ body {
     margin-right: 0;
 }
 
-.menu-btn { 
+.menu-btn {
     height: 25px;
     text-decoration: none;
     font-weight: 400;
@@ -70,7 +81,8 @@ body {
 
 .menu-btn:hover {
     opacity: 0.5;
-    border-bottom: 1px solid #000000;;
+    border-bottom: 1px solid #000000;
+    ;
 }
 
 /* >>> Главная секция */
@@ -92,6 +104,7 @@ body {
     position: relative;
     height: 500px;
     background-image: url(../resourses/main-pic.jpg);
+    background-repeat: no-repeat;
 }
 
 .p-wrapper p {
@@ -115,16 +128,17 @@ body {
 /* >>> Секция О НАС */
 .about {
     margin-top: 151px;
-    }
+}
 
-.about h2, .project-list h2 {
+.about h2,
+.project-list h2 {
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
     color: #121212;
 }
 
-.about p {
+.about__decription {
     margin-top: 30px;
     padding-left: 3px;
     width: 1051px;
@@ -132,6 +146,11 @@ body {
     font-size: 45px;
     line-height: 61px;
     color: #121212;
+}
+@media (max-width: 1399px) {
+    .about__decription {
+        width: 100%;
+    }
 }
 
 .servises_view {
@@ -150,6 +169,7 @@ body {
     background: #AD1818;
     border-radius: 5px;
 }
+
 /* <<< Секция О НАС */
 
 
@@ -164,6 +184,7 @@ body {
 
 .project-card-wrapper {
     margin-bottom: 91px;
+    overflow: hidden;
 }
 
 .project-card-wrapper h3 {
@@ -171,7 +192,7 @@ body {
 
     font-size: 30px;
     line-height: 41px;
-    color: #121212;    
+    color: #121212;
 }
 
 .project-card-detail {
@@ -182,7 +203,7 @@ body {
     text-decoration: none;
     font-size: 20px;
     line-height: 27px;
-    color: #AD1818;    
+    color: #AD1818;
 }
 
 .view_all_projects {
@@ -191,28 +212,29 @@ body {
     font-size: 30px;
     line-height: 150px;
     text-align: center;
-    color: #AD1818;    
+    color: #AD1818;
     text-decoration: none;
     border: 1px solid #AD1818;
     border-radius: 7px;
     /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
+
 .view_all_projects:hover {
-    color: #FFFFFF; 
+    color: #FFFFFF;
     background-color: #AD1818;
 }
+
 /* <<< Секция Список проектов */
 
 /* >>> Секция УСЛУГИ */
-.services-wrapper {
+.services {
     background: #121212;
     padding: 150px 0;
     margin-top: 150px;
-    width: 100%;
 }
 
 .services {
-    color: #FFFFFF; 
+    color: #FFFFFF;
 
 }
 
@@ -222,7 +244,7 @@ body {
 
     font-size: 18px;
     line-height: 25px;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
 .service-card img {
@@ -249,9 +271,8 @@ body {
 
 /* >>> Двухкомнатная картина */
 .two-rooms-flat {
-    width: 100%;
     height: 717px;
-    
+
     background-image: url(../resourses/project_of_flat.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -259,9 +280,7 @@ body {
 
 }
 
-.two-rooms-flat .container {
-    margin: 0 auto;
-    width: 1150px;
+.two-rooms-flat__inner {
     height: 717px;
     position: relative;
 }
@@ -273,7 +292,7 @@ body {
     width: 443px;
     font-size: 30px;
     line-height: 41px;
-    color: #FFFFFF;   
+    color: #FFFFFF;
 }
 
 /* <<< Двухкомнатная картина */
@@ -281,31 +300,33 @@ body {
 /* >>> Контакты */
 .contact {
     padding-top: 172px;
-    position: relative;
 
     color: #121212;
 }
 
-.contact:before {
+.contact__contact {
+    margin-top: 15px;
+    position: relative;
+
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.contact__contact::before {
     content: '';
     display: block;
     position: absolute;
-    width: 24px; height: 24px;
-    top: 151px; left: 11px;
+    width: 24px;
+    height: 24px;
+    bottom: 37px;
+    left: -4px;
 
 
     background-image: url(../resourses/Vector.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-}
-
-.contact__contact {
-    margin-top: 15px;
-
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;    
 }
 
 .contact__number {
@@ -326,12 +347,13 @@ body {
     text-decoration: none;
     color: #121212;
 }
+
 .contact__email-wrapper {
     margin-top: 30px;
     display: inline-block;
     height: 70px;
     padding-bottom: 10px;
-    opacity: 0.5;  
+    opacity: 0.5;
     border-bottom: 2px solid #121212;
 }
 
@@ -356,9 +378,7 @@ body {
 
 }
 
-.footer .container {
-    margin: 0 auto;
-    width: 1150px;
+.footer {
     text-align: center;
 }
 
@@ -385,13 +405,14 @@ body {
     text-decoration: none;
     color: white;
 }
+
 .footer__menu a:hover {
     opacity: 0.5;
 }
 
 .design-studio {
     margin-top: 87px;
-    padding-left: 11px;
+    я padding-left: 11px;
 
     text-align: center;
     opacity: 0.5;
@@ -399,4 +420,5 @@ body {
     font-size: 20px;
     line-height: 27px;
 }
+
 /* <<< Footer */
