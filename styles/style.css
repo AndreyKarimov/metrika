@@ -554,7 +554,7 @@ section {
     width: calc(50% - 25px);
 }
 
-.review-item:last-child {
+.review-item_big {
     width: max(861px, calc(50% - 25px));
 }
 
@@ -577,7 +577,7 @@ section {
         gap: 50px 10px;
     }
     
-    .review-item:last-child {
+    .review-item_big {
         width: max(694px, calc(50% - 25px));
     }
         
@@ -603,7 +603,7 @@ section {
         width: 100%;
     }
     
-    .review-item:last-child {
+    .review-item_big {
         width: 100%;
     }
 }
