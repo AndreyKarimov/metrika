@@ -18,7 +18,7 @@ h2,.about p,
 .project-card-detail,
 .view_all_projects,
 .service-item h3,
-.two-rooms-flat p,
+.galary p,
 .contact__contact,
 .contact__email,
 .footer__menu a,
@@ -630,33 +630,91 @@ section {
 
 /* <<< Секция ОТЗЫВЫ */
 
-/* >>> Двухкомнатная картина */
-.two-rooms-flat {
-    height: 717px;
-
-    background-image: url(../resourses/project_of_flat.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-
+/* >>> Galary */
+.galary-section {
+    margin-top: 157px;
 }
 
-.two-rooms-flat__inner {
-    height: 717px;
+.galary {
     position: relative;
 }
 
-.two-rooms-flat p {
+.galary__title-wrapper, .galary__controls-wrapper {
     position: absolute;
-    bottom: 60px;
-    left: 3px;
-    width: 443px;
-    font-size: 30px;
-    line-height: 41px;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+}
+
+.galary__title-wrapper {
+    z-index: 100;
+}
+
+.galary__title {
+    margin-top: 60px;
+
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
     color: #FFFFFF;
 }
 
-/* <<< Двухкомнатная картина */
+.galary__slide {
+    position: relative;
+    opacity: 0;
+}
+
+.galary__slide-active {
+    opacity: 1;
+}
+
+.galary__pic-title {
+    position: absolute;
+    bottom: 60px;
+    
+    max-width: 443px;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+} 
+
+.galary__pic {
+    width: 100%; height: 717px;
+    object-fit: cover;
+}
+
+.galary__controls-wrapper {
+    z-index: 200;
+}
+
+.galary__controls {
+    position: absolute;
+    bottom: 162px;  
+    display: flex;
+    gap: 7px;
+}
+
+.galary__btn-prev, .galary__btn-next {
+    width: 40px; height: 40px;
+    background-image: url(../resourses/galary-control-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: unset;
+    border: unset;
+}
+
+.galary__btn-next {
+    transform: scale(-1, 1);
+}
+
+.galary__btn-prev:hover, .galary__btn-next:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@media (max-width: 959px) {
+
+}
+/* <<< Galary */
 
 /* >>> Контакты */
 .contact {
