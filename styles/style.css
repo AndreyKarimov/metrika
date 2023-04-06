@@ -722,6 +722,12 @@ section {
     cursor: pointer;
 }
 
+.gallery__control-prev:active, .gallery__control-next:active {
+    opacity: 0.5;
+    cursor: pointer;
+    background-size: 45%;
+}
+
 @media (max-width: 959px) {
     .gallery-section {
         margin-top: calc(80px + 40 * (100vw - 375px) / 585);
