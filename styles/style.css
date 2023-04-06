@@ -639,7 +639,7 @@ section {
     position: relative;
 }
 
-.gallery__title-wrapper, .gallery__controls-wrapper {
+.gallery__title-wrapper, .gallery__controls-wrapper-outline {
     position: absolute;
     width: 100%; height: 100%;
     top: 0; left: 0;
@@ -647,6 +647,10 @@ section {
 
 .gallery__title-wrapper {
     z-index: 100;
+}
+
+.gallery__controls-wrapper-outline {
+    z-index: 200;
 }
 
 .gallery__title {
@@ -688,15 +692,6 @@ section {
     width: 100%; height: 100%;
     object-fit: cover;
 
-}
-
-.gallery__controls-wrapper-outline {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 200;
 }
 
 .gallery__controls-wrapper-inline {
