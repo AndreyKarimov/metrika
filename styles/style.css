@@ -777,74 +777,135 @@ section {
 /* <<< gallery */
 
 /* >>> Контакты */
-.contact {
-    padding-top: 172px;
+.contact__inner {
+    padding-top: 150px;
+    padding-bottom: 150px;
 
     color: #121212;
 }
 
-.contact__contact {
-    margin-top: 15px;
-    position: relative;
+.contact__title {
 
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
 }
 
-.contact__contact::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    bottom: 37px;
-    left: -4px;
+.contact-wrapper {
+    margin-top: 74px;
+    display: flex;
+    column-gap: max(104px, calc(114px - 10 * (100vw - 959px) / 221));
+    row-gap: 58px;
+    flex-wrap: wrap;
+}
 
-
-    background-image: url(../resourses/Vector.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.contact__number, .contact__email {
+    position: relative;
+    text-decoration: none;
+    font-size: min(60px, calc(45px + 15 * (100vw - 959px) / 221));
+    line-height: 70px;
+    color: #121212;
 }
 
 .contact__number {
-    margin-top: 32px;
-    display: block;
+    min-width: min(472px, calc(354px + 118 * (100vw - 959px) / 221));
+}
 
-    font-size: 60px;
-    line-height: 60px;
-    letter-spacing: -0.01em;
-    text-decoration: none;
-    color: #121212;
+.contact__number:before, .contact__email:before {
+    content: '';
+    position: absolute;
+    width: 24px; height: 24px;
+    top: -50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 
 }
 
-.contact__email {
-    font-size: 60px;
-    line-height: 60px;
-    text-decoration: none;
-    color: #121212;
+.contact__number:before {
+    background-image: url(../resourses/phone-icn.png);
 }
 
-.contact__email-wrapper {
-    margin-top: 30px;
-    display: inline-block;
-    height: 70px;
-    padding-bottom: 10px;
+.contact__email:before {
+    background-image: url(../resourses/mail-icn.png);
+
+}
+
+.contact__number:hover, .contact__email:hover {
     opacity: 0.5;
     border-bottom: 2px solid #121212;
 }
 
-/* .contact__email:after {
-    margin-top: 10px;
-    display: block;
-    content: '';
-    width: 100%;
-    height: 2px;
-    background-color: #121212;
-    opacity: 0.5;
-} */
+@media (max-width: 959px) {
+    .contact__inner {
+        padding-top: calc(80px + 40 * (100vw - 375px) / 585);
+        padding-bottom: 80px;
+    }
+    .contact__title {
+
+        font-size: calc(14px + 4 * (100vw - 375px) / 585);
+        line-height: calc(19px + 6 * (100vw - 375px) / 585);
+    }
+    
+    .contact-wrapper {
+        margin-top: calc(58px + 16 * (100vw - 375px) / 585);
+        column-gap: max(20px, calc(20px + 84 * (100vw - 375px) / 585));
+    }
+    
+    .contact__number, .contact__email {
+        font-size: calc(35px + 10 * (100vw - 375px) / 585);
+        line-height: calc(46px + 14 * (100vw - 375px) / 585);
+    }
+    
+    .contact__number {
+        min-width: calc(300px + 54 * (100vw - 375px) / 585);
+    }
+    
+    .contact__number:before, .contact__email:before {
+        top: calc(-50px + 12 * (100vw - 375px) / 585);
+    }
+}
+
+@media (max-width: 374px) {
+    .contact__inner {
+        padding-top: 80px;
+    }
+    
+    .contact__title {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    .contact-wrapper {
+        margin-top: 58px;
+        row-gap: 58px;
+        flex-direction: column;
+    }
+    
+    .contact__number, .contact__email {
+        font-size: 35px;
+        line-height: 46px;
+    }
+    
+    .contact__number {
+        min-width: unset;
+    }
+    
+    .contact__email {
+        border-bottom: unset;
+    }
+    
+    .contact__number:before, .contact__email:before {
+        width: 18px; height: 18px;
+        top: -38px;
+    }
+
+    .contact__email {
+        opacity: 1;
+    }   
+}
+
+
 /* <<< Контакты */
 
 /* >>> Footer */
