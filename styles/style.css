@@ -56,7 +56,7 @@ h2 {
 }
 @media (max-width: 374px){
     .container {
-        min-width: 300px;
+        min-width: 320px;
     }
 
     h2 {
@@ -910,55 +910,90 @@ section {
 
 /* >>> Footer */
 .footer {
-    margin-top: 150px;
-    padding: 58px 0 30px;
     background: #121212;
     color: white;
-    /* text-align: center; */
 
 }
 
-.footer {
-    text-align: center;
+.footer__inner {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* .footer ul {
-    display: block;
-    margin: 0 auto;
-    width: 450px;
-} */
+.footer__menu {
+    display: flex;
+    column-gap: 55px;
 
-.footer__menu li {
-    display: inline-block;
-    margin-right: 52px;
 }
 
-.footer__menu li:last-child {
-    margin-right: 6px;
-}
+.footer__menu-item {
 
-.footer__menu a {
-
+    text-decoration: none;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
-    text-decoration: none;
-    color: white;
+    color: #FFFFFF;    
 }
 
-.footer__menu a:hover {
+.footer__menu-item:hover {
+    cursor: pointer;
     opacity: 0.5;
 }
 
-.design-studio {
+.footer__studio-name {
     margin-top: 87px;
-    я padding-left: 11px;
-
-    text-align: center;
-    opacity: 0.5;
 
     font-size: 20px;
     line-height: 27px;
+    opacity: 0.5;
 }
 
+@media (max-width: 959px) {    
+    .footer__inner {
+        padding-top: calc(30px + 30 * (100vw - 375px) / 585);
+        padding-bottom: calc(26px + 4 * (100vw - 375px) / 585);
+    }
+    
+    .footer__menu {
+        column-gap: calc(30px +25 * (100vw - 375px) / 585);
+    }
+    
+    .footer__menu-item {
+        font-size: calc(12px + 6 * (100vw - 375px) / 585);
+        line-height: calc(16px + 9* (100vw - 375px) / 585);
+    }
+    
+    .footer__studio-name {
+        margin-top: calc(41px + 46 * (100vw - 375px) / 585);
+    
+        font-size: calc(13px + 7 * (100vw - 375px) / 585);
+        line-height: calc(18px + 9 * (100vw - 375px) / 585);
+    }       
+}
+
+@media (max-width: 374px) {
+    .footer__inner {
+        padding-top: 30px;
+        padding-bottom: 26px;
+    }
+    
+    .footer__menu {
+        column-gap: 30px;
+    }
+    
+    .footer__menu-item {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    .footer__studio-name {
+        margin-top: 41px;
+    
+        font-size: 13px;
+        line-height: 18px;
+    } 
+}
 /* <<< Footer */
