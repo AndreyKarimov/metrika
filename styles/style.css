@@ -466,9 +466,40 @@ section {
     line-height: 30px;
     background-color: #AD1818;
     border-radius: 5px;
-
 }
 
+.order-service-btn__wrapper {
+    margin-top: 106px;
+}
+
+.order-service-btn {
+    padding: 0 10px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+
+    cursor: pointer;
+    border-style: unset;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #AD1818;
+    font-size: 30px;
+    line-height: 153px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+
+.order-service-btn:active {
+    border-style: unset;
+}
+
+.order-service-btn:hover {
+    color: #AD1818;
+    text-decoration: none;
+    outline: 1px solid #AD1818;
+    background-color: #121212;
+
+}
 @media (max-width: 959px) {
     .services {
         margin-top: 104px;
@@ -484,6 +515,11 @@ section {
     }
     .service-item__img {
         height: 315px;
+    }
+
+    .order-service-btn {
+        font-size: calc(22px + 8 * (100vw - 375px) / 585);;
+        line-height: calc(100px + 53 * (100vw - 375px) / 585);;
     }
 }
 
