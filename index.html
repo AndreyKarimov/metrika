@@ -117,25 +117,23 @@
                         </li>
                     </ul>
                     <div class="order-service-btn__wrapper">
-                        <button class="order-service-btn">
+                        <button class="js-btn order-service-btn">
                             Заказать услугу
                         </button>
                     </div>
-                    <!-- <div class="popup">
-                        <div class="popup__content">
-                            <div class="popup__content-inner">
+                    <div class="js-popup popup">
+                        <div class="js-popup__content popup__content">
                                 <p class="popup__title">Заказать услугу</p>
                                 <p class="popup__decription">Заполните форму, мы свяжемся с вами в течение суток</p>
-                                <ul class="popup__contact-form">
-                                    <li class="popup__name"><input type="Имя"></li>
-                                    <li class="popup__mail"><input type="Электронная почта"></li>
-                                    <li class="popup__number"><input type="Номер телефона"></li>
-                                    
-                                </ul>
-
-                            </div>
+                                <div class="popup__contact-form">
+                                    <input class="popup__name" type="text" placeholder="Имя">
+                                    <input class="popup__mail" type="email" placeholder="Электронная почта">
+                                    <input class="popup__number" type="text" placeholder="Номер телефона">
+                                    <input class="popup__order-btn" type="button" value="Отправить">
+                                </div>
+                                <div class="js-popup__close-btn popup__close-btn"></div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </section>
@@ -258,6 +256,7 @@
     </footer>
     <!-- Footer -->
     
+<script src="js/popup.js"></script>
 <script src="js/gallery.js"></script>
 </body>
 </html>
