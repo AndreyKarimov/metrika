@@ -181,7 +181,7 @@ section {
     z-index: 300;
     color: #000000;
     text-align: center;
-    transition: all 0.5s ease;
+    transition: 0.3s ease;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -191,7 +191,7 @@ section {
 }
 
 .burger-menu__content {
-    width: 274px;
+    width: 0;
     height: 100%;
     padding: 80px 30px 0;
     display: flex;
@@ -199,7 +199,18 @@ section {
     align-items: flex-start;
     row-gap: 50px;
     background-color: #FFFFFF;
+    opacity: 0;
+    visibility: hidden;
 }
+
+.burger-menu__content_open {
+    opacity: 1;
+    visibility: visible;
+    width: 274px;
+    transition: width 0.5s ease-out;
+}
+
+
 
 .burger-menu__list {
     display: flex;
