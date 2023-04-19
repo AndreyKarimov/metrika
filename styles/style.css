@@ -698,6 +698,7 @@ section {
     text-align: center;
     transition: all 0.5s ease;
     background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
 }
 
 .popup__open {
