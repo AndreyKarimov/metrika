@@ -38,7 +38,8 @@ h2,.about p,
 .review-content,
 .contact__number,
 .contact__email,
-.footer__studio-name {
+.footer__studio-name,
+.contact__title {
     letter-spacing: -0.03em;
 }
 
@@ -978,7 +979,7 @@ section {
     
     .review-list {
         margin-top: 22px;
-        gap: 80px 0;
+        gap: 76px 0;
     }
     
     .review-title {
@@ -987,6 +988,7 @@ section {
     }
     
     .review-content {
+        margin-top: 10px;
         font-size: 16px;
         line-height: 22px;
     }   
@@ -1045,6 +1047,7 @@ section {
 .gallery__pic-title {
     position: absolute;
     bottom: 60px;
+    left: 9px;
     
     max-width: 443px;
     font-size: 30px;
@@ -1073,6 +1076,7 @@ section {
     background-image: url(../resourses/gallery-control-btn.png);
     background-repeat: no-repeat;
     background-color: unset;
+    background-position: center;
     border: unset;
 }
 .gallery__control-next {
@@ -1092,7 +1096,7 @@ section {
 .gallery__control-prev:active, .gallery__control-next:active {
     opacity: 0.5;
     cursor: pointer;
-    background-size: 45%;
+    background-size: 60%;
 }
 
 @media (max-width: 959px) {
@@ -1134,11 +1138,24 @@ section {
     }
 
     .gallery__controls-wrapper-inline {
-        margin-top: calc(50% - 15px);
+        margin-top: calc(50% + 12px);
     }
 
     .gallery__control-prev, .gallery__control-next {
         width: 30px; height: 30px;
+        background-size: 52%;
+    }
+    .gallery__control-next {
+        background-position: left;
+    }
+    .gallery__control-prev {
+        background-position: center;
+    }
+
+    .gallery__title {
+        margin-top: 62px;
+        padding-left: 4px;
+        max-width: 284px;
     }
 }
 /* <<< gallery */
@@ -1239,6 +1256,7 @@ section {
 @media (max-width: 374px) {
     .contact__inner {
         padding-top: 80px;
+        padding-bottom: 56px;
     }
     
     .contact__title {
@@ -1248,7 +1266,7 @@ section {
     
     .contact-wrapper {
         margin-top: 58px;
-        row-gap: 58px;
+        row-gap: 35px;
         flex-direction: column;
     }
     
