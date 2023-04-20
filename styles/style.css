@@ -909,7 +909,7 @@ section {
 }
 
 .review-item {
-    width: max(528px, calc(50% - 25px));
+    width: min(528px, calc(50% - 25px));
 }
 
 .review-item_big {
