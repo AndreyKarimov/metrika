@@ -345,6 +345,7 @@ section {
     
     
     .main-section__title {
+        max-width: 337px;
         font-size: 30px;
         line-height: 32px;
     }
@@ -787,6 +788,10 @@ section {
         height: 315px;
     }
 
+    .order-service-btn__wrapper {
+        margin-top: 88px;
+    }
+
     .order-service-btn {
         font-size: calc(22px + 8 * (100vw - 375px) / 585);
         line-height: calc(100px + 53 * (100vw - 375px) / 585);
@@ -855,7 +860,7 @@ section {
 @media (max-width: 375px) {
     .services {
         padding: 80px 0;
-        margin-top: 141px;
+        margin-top: 144px;
     }
     
    
@@ -1052,7 +1057,6 @@ section {
 .gallery__pic-title {
     position: absolute;
     bottom: 60px;
-    left: 9px;
     
     max-width: 443px;
     font-size: 30px;
@@ -1128,7 +1132,7 @@ section {
     .gallery__pic-title {
         bottom: calc(60px + 20 *  (100vw - 375px) / 585);
         
-        max-width: 377px;
+        max-width: 285px;
         font-size: calc(19px + 7 *  (100vw - 375px) / 585);
         line-height: calc(26px + 8 *  (100vw - 375px) / 585);
     } 
@@ -1160,7 +1164,7 @@ section {
 
     .gallery__title {
         margin-top: 62px;
-        padding-left: 4px;
+        padding-left: 7px;
         max-width: 284px;
     }
 }
@@ -1353,6 +1357,7 @@ section {
     
     .footer__menu {
         column-gap: calc(30px +25 * (100vw - 375px) / 585);
+        margin-left: -15px;
     }
     
     .footer__menu-item {
@@ -1376,6 +1381,7 @@ section {
     
     .footer__menu {
         column-gap: 30px;
+        margin-left: -1px;
     }
     
     .footer__menu-item {
