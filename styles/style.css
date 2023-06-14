@@ -898,6 +898,329 @@ section {
 
 /* <<< Секция УСЛУГИ */
 
+/* Секция КАЛЬКУЛЯТОР */
+.calc {
+    margin-top: 150px;
+}
+.calc-title {
+    font-size: 45px;
+    line-height: 61px;
+    letter-spacing: -0.03em;
+    color: #121212;
+}
+.options {
+    margin-top: 61px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap-reverse; 
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.option-list {
+    width: calc(100% - 290px);
+    min-width: 700px;
+}
+.option-block {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 56px;
+
+    border-top: 1px solid rgba(1, 33, 33, 0.4);
+}
+.option-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    text-transform: uppercase;
+}
+
+.option-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 5px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.option-item__title {
+
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+}
+
+.space-area--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.space-area__value {
+    padding: 0 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    color: #AD1818;
+    letter-spacing: -0.03em;
+    font-size: 30px;
+    line-height: 41px;
+}
+
+.space-area__value--unit span {
+    vertical-align: super;
+    font-size: 60%;
+}
+
+.option-item__building-type {
+
+    width: 257px;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+
+}
+
+.option-item__building-type--wrapper {
+    position: relative;
+    width: 257px;
+}
+
+.option-item__building-type--wrapper:after {
+    position: absolute;
+    content: '>';
+    right: 80px;
+    top: 21px;
+    font-size: 32px;
+    transform: rotate(90deg);
+    color: #121212;
+    pointer-events: none;
+}
+
+
+.option-item__building-type:focus-visible {
+    outline: none;
+}
+
+.option-item__space-area {
+    width: 257px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    height: 1px;
+    background-color: #AD1818;
+    
+}
+
+.option-item__space-area::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: #ad1818;
+    cursor: pointer;
+}
+
+.option-item {
+    margin-top: 4px;
+}
+.option-item__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    
+}
+
+.option-item__add-opt {
+    padding: 0 20px;
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-size: 30px;
+    line-height: 62px;
+    letter-spacing: -0.03em;
+    color: #121212;
+}
+
+.option-item--select {
+    position: relative;
+    border: 1px solid #AD1818;
+    color: #AD1818;
+}
+
+.option-item--select:after {
+    position: absolute;
+    right: 23px; top: 23px; 
+    content: '';
+    width: 23px;
+    height: 18px;
+    background-image: url(../resourses/select-opt-btn.png);
+
+}
+
+.option-subtext {
+    margin-top: 20px;
+
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+}
+
+.option-item__add-service-list {
+    max-width: 697px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.option-item__add-service-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 24px;
+    text-align: left;
+}
+
+
+.option-item__add-service-title {
+    width: 100%;
+}
+
+.option-item__add-service-price {
+    width: 120px;
+}
+
+.option-item__add-service-checkbox {
+    width: 24px;
+    height: 19px;
+
+    opacity: 0.4;
+    border: 1px solid #121212;
+    border-radius: 5px;
+}
+
+.option-item__add-service-checkbox--active {
+    background: #AD1818;
+    opacity: 1;
+    border: none;
+    background-image: url(../resourses/addServCeckbox.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.option-result {
+    padding: 30px 24px 30px 20px;
+    width: 280px;
+    height: 410px;
+    
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+    background: #F7F7F7;
+    border-radius: 5px;
+
+}
+.option-result__title {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+.option-result__cost {
+    margin-top: 5px;
+
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+}
+.option-result__price {
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+}
+.option-result__duration {
+    margin-top: 100px;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+}
+
+.option-result__order-btn {
+    margin-top: 5px;
+    height: 67px; 
+}
+.order-btn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    background-color: #AD1818;
+    border-radius: 5px;
+}
+
+.option-item__area {
+    width: 257px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+    color: #AD1818;   
+}
+
+@media (max-width: 1020px) {
+    .option-result {
+        width: 100%;
+        height: 300px;
+    }
+    .option-result__duration {
+        margin-top: 10px;
+    }
+    .option-result__order-btn {
+        height: 47px; 
+    }
+
+    .option-list {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .option-item {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        column-gap: unset;
+        row-gap: 15px;
+    
+    }
+}
+
+
+/* Секция КАЛЬКУЛЯТОР */
+
+
 /* >>> Секция ОТЗЫВЫ */
 .review-inner {
     margin-top: 150px;
