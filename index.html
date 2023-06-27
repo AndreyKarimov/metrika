@@ -170,11 +170,11 @@
                                 <div class="option-item">
                                     <div class="option-item__title">выберите тип помещения</div>
                                     <div class="option-item__building-type--wrapper">
-                                        <select class="option-item__building-type" id="buildingType">
-                                            <option value="Квартира" selected>Квартира</option>
-                                            <option value="ПСН" selected>ПСН</option>
-                                            <option value="Здание" selected>Здание</option>
-                                        </select>
+                                        <select 
+                                            itemid="buildingType" 
+                                            class="option-item__building-type" 
+                                            id="buildingType"
+                                        ></select>
                                     </div>
                                 </div>
                                 <div class="option-item">
@@ -184,7 +184,6 @@
                                             <div 
                                                 id="spaceAreaValue"
                                                 class="space-area__value--quan">
-                                                44
                                             </div>
                                             <div class="space-area__value--unit">M<span>2</span></div>
                                         </div>
@@ -193,35 +192,34 @@
                                             id="spaceArea"
                                             min="5"
                                             max="200"
-                                            value="44"
                                             class="option-item__space-area">
                                     </div>
                                 </div>
                             </div>
                             <div class="option-block">
                                 <p class="option-title">состав дизайн-проекта</p>
-                                <div class="option-item">
+                                <div id="planningSolutions" class="option-item">
                                     <div class="option-item__title">планировочные решения</div>
                                     <div class="option-item__area">
-                                        <div class="option-item__area--minus">-</div>
-                                        <div class="option-item__area--value">1</div>
-                                        <div class="option-item__area--plus">+</div>
+                                        <button id="minus1" class="option-item__area--minus">-</button>
+                                        <div id="planningSolutionsValue" class="option-item__area--value"></div>
+                                        <button id="plus1" class="option-item__area--plus">+</button>
                                     </div>
                                 </div>
-                                <div class="option-item">
+                                <div id="draftOptions" class="option-item">
                                     <div class="option-item__title">варианты чертежей</div>
                                     <div class="option-item__area">
-                                        <div class="option-item__area--minus">-</div>
-                                        <div class="option-item__area--value">1</div>
-                                        <div class="option-item__area--plus">+</div>
+                                        <button id="minus2" class="option-item__area--minus">-</button>
+                                        <div id="draftOptionsValue" class="option-item__area--value"></div>
+                                        <button id="plus2" class="option-item__area--plus">+</button>
                                     </div>
                                 </div>
-                                <div class="option-item">
+                                <div id="visualizationOptions" class="option-item">
                                     <div class="option-item__title">варианты визуализаций</div>
                                     <div class="option-item__area">
-                                        <div class="option-item__area--minus">-</div>
-                                        <div class="option-item__area--value">1</div>
-                                        <div class="option-item__area--plus">+</div>
+                                        <button id="minus3" class="option-item__area--minus">-</button>
+                                        <div id="visualizationOptionsValue" class="option-item__area--value"></div>
+                                        <button id="plus3" class="option-item__area--plus">+</button>
                                     </div>
                                 </div>
                             </div>
@@ -288,7 +286,7 @@
                         <div class="option-result">
                             <div class="option-result__title">стоимость проекта</div>
                             <div class="option-result__cost">44 000₽</div>
-                            <div class="option-result__price">1000 ₽/м2</div>
+                            <div id="optionResultPrice" class="option-result__price"></div>
                             <div class="option-result__duration">35-45 дней</div>
                             <div class="option-result__order-btn">
                                 <button class="order-btn" id="OrderBtn" type="button">Заказать проект</button>
@@ -449,8 +447,11 @@
     </div>
     <!-- burger menu -->
     
+    
+
 <script src="js/popup.js"></script>
 <script src="js/gallery.js"></script>
 <script src="js/burger.js"></script>
+<script src="js/calculator.js" type="module"></script>
 </body>
 </html>

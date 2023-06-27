@@ -998,7 +998,7 @@ section {
 .option-item__building-type--wrapper:after {
     position: absolute;
     content: '>';
-    right: 80px;
+    right: 10px;
     top: 21px;
     font-size: 32px;
     transform: rotate(90deg);
@@ -1191,6 +1191,14 @@ section {
     line-height: 41px;
     letter-spacing: -0.03em;
     color: #AD1818;   
+}
+
+.option-item__area--plus, 
+.option-item__area--minus {
+    border: none;
+    background: unset;
+    color: inherit;
+    cursor: pointer;
 }
 
 @media (max-width: 1020px) {
