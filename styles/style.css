@@ -913,9 +913,9 @@ section {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    flex-wrap: wrap-reverse; 
+    flex-wrap: wrap; 
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 .option-list {
     width: calc(100% - 290px);
@@ -1080,6 +1080,7 @@ section {
 
 .option-item__add-service-list {
     max-width: 697px;
+    min-width: 524px;
     display: flex;
     flex-direction: column;
     row-gap: 40px;
@@ -1184,6 +1185,7 @@ section {
     display: flex;
     flex-direction: row;
     column-gap: 15px;
+    justify-content: flex-end;
 
     font-size: 30px;
     line-height: 41px;
@@ -1209,11 +1211,63 @@ section {
     }
 
     .option-item {
-        flex-direction: column;
         flex-wrap: nowrap;
         column-gap: unset;
         row-gap: 15px;
+    }
+}
+
+@media (max-width: 786px) {
+    .calc-title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .option-item__title {
+
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.03em;
+    }
+
+    .option-item__building-type {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .space-area__value {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .option-item__area {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .option-item__add-opt {
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    .option-subtext {
+        font-size: 16px;
+        line-height: 22px;
+    }
     
+    .option-result__cost {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .option-result__price {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .option-result__duration {
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 
